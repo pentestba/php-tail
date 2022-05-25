@@ -97,7 +97,7 @@ class PHPTail {
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap 101 Template</title>
+<title>Monitor Replication logs</title>
 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -256,7 +256,7 @@ console.log(e);
     /* ]]> */
 </script>
 </head>
-<body>
+<body style="padding-top: 70px;">
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -272,7 +272,7 @@ console.log(e);
                             <?php endforeach;?>
                         </ul>
                     </li>
-                    <li><a href="#" id="grepKeyword">Settings</a></li>
+                  <!--  <li><a href="#" id="grepKeyword">Settings</a></li> -->
                     <li><span class="navbar-text" id="grepspan"></span></li>
                     <li><span class="navbar-text" id="invertspan"></span></li>
                 </ul>
@@ -280,8 +280,9 @@ console.log(e);
             </div>
         </div>
     </div>
-    <div class="contents">
-        <div id="results" class="results"></div>
+    <div class="contents">                
+        <div id="results" class="results" style="white-space: normal;"></div>
+                             <?php //echo "goood";?>  
         <div id="settings" title="PHPTail settings">
             <p>Grep keyword (return results that contain this keyword)</p>
             <input id="grep" type="text" value="" />
